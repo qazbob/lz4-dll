@@ -1,22 +1,23 @@
 LZ4 - dll: Visual Studio Project
 ================================
-Visual Studio project to create LZ4 dlls.
+Visual Studio project to create LZ4 dll.
 
-This repo contains a Visual Studio 2013 project to create dlls from the LZ4 library.
-The dlls are relative only to the core functions of LZ4 and LZ4HC.
+This repo contains a Visual Studio 2013 project to create a dll from the LZ4 library.
+The dll is relative only to the core functions of LZ4 and LZ4HC.
 
 # Compiling
-The version of LZ4 synchronized with this repo is the **r131**.
+The version of LZ4 synchronized with this repo is the **r131** (branch master at the moment).
+
 Because the branch master of LZ4 is always stable, you can always update the LZ4 submodule to the most recent version on the branch master.
 
-# Using the dlls
-The dlls export the following functions of LZ4:
-	LZ4_compress_default
-	LZ4_compress_fast
-	LZ4_decompress_fast
-	LZ4_decompress_safe
-	LZ4_compressBound
-	LZ4_compress_HC
+# Using the dll
+The dll exports the following functions of LZ4:
+* LZ4_compress_default
+* LZ4_compress_fast
+* LZ4_decompress_fast
+* LZ4_decompress_safe
+* LZ4_compressBound
+* LZ4_compress_HC
 
 For the last one you need to include **lz4hc.h**, while for the others you need **lz4.h**.
 
