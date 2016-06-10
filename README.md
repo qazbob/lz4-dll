@@ -11,8 +11,14 @@ Because the branch master of LZ4 is always stable, you can always update the LZ4
 
 # Using the dlls
 The dlls export the following functions of LZ4:
+	LZ4_compress_default
+	LZ4_compress_fast
+	LZ4_decompress_fast
+	LZ4_decompress_safe
+	LZ4_compressBound
+	LZ4_compress_HC
 
-For the same functions are provided also entry points. To keep it simple the entry point have similar names of the function, the only difference is that the prefix of the library functions is "LZ4_" while the prefix of the entry points is "Lz4_".
+For the last one you need to include **lz4hc.h**, while for the others you need **lz4.h**.
 
 # About LZ4
 LZ4 is lossless compression algorithm, 
